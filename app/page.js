@@ -32,14 +32,16 @@ export default function Home() {
 
     const tl = gsap.timeline();
     tl.from(textref,{ y:40, ease:"power2.inOut"})
-
-
-
-
-
-
-
   }, []);
+
+
+  const images = [
+    "/image/image-three.png",
+    "/image/image-one.png",
+    "/image/image-two.png",
+    "/image/image-three.png",
+    "/image/image-one.png"
+  ];
 
   return (
     <div className="w-full">
@@ -48,7 +50,7 @@ export default function Home() {
       </div>
       <div ref={heroref} className="w-full h-screen  bg-[#afee6b]  text-black flex flex-col justify-between items-center absolute tracking-widest">
         <div className="pt-10"><Image src={logo} width={50} height={50} alt="logo" /></div>
-        <div className="text-center  text-6xl md:text-8xl lg:text-9xl font-inter font-[800]"><div ref={textref} >THE DESIG</div><div>AGENCY</div></div>
+        <div className="text-center  text-6xl md:text-8xl lg:text-9xl font-inter font-[800]"><div ref={textref} >THE DESIGN</div><div>AGENCY</div></div>
         <div><Image src={arrowdown} width={60} height={60} alt="logo" /></div>
       </div>
 
@@ -76,19 +78,23 @@ export default function Home() {
 
 
       <div className=" w-full h-96 flex justify-center items-center overflow-x-hidden space-x-4  bg-[#9ce968]">
-        
-        <div className="h-48 md:h-64 w-[250px] md:w-[450px] bg-amber-800 rounded-2xl flex-shrink-0"></div>
-        <div className="h-48 md:h-64 w-[250px] md:w-[450px] bg-amber-800 rounded-2xl flex-shrink-0"></div>
-        <div className="h-48 md:h-64 w-[250px] md:w-[450px] bg-amber-800 rounded-2xl flex-shrink-0"></div>
-        <div className="h-48 md:h-64 w-[250px] md:w-[450px] bg-amber-800 rounded-2xl flex-shrink-0"></div>
-        <div className="h-48 md:h-64 w-[250px] md:w-[450px] bg-amber-800 rounded-2xl flex-shrink-0"></div>
+      {images.map((src, index) => (
+        <div key={index} className="h-48 md:h-64 w-[250px] md:w-[450px] rounded-2xl flex-shrink-0 overflow-hidden relative">
+          <img src={src} alt={`Image ${index + 1}`} className="w-full h-full object-cover" />
+        </div>
+      ))}
       </div>
 
 
 
 
 
-      <div className="bg-[#d24ad0] w-full h-screen">
+      <div className="bg-[#73d848] w-full h-screen flex flex-col items-center justify-end space-y-32">
+      <div className="h-40 w-36 bg-black">njajnaajna</div>
+      <div className="h-40 w-full flex flex-col items-center justify-center">
+      <hr className="border-white w-[90%] mb-2" />
+      <div className="text-white">© 2025 Envato Trademarks and brands are the property of their respective owners.</div>
+      </div>
 
       </div>
     </div> 
