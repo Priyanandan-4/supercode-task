@@ -56,7 +56,7 @@ export default function Home() {
 
 
 
-      <div className="z-10 w-full h-96 md:h-screen bg-white flex justify-center items-center  text-center leading-tight   text-8xl  ">
+      <div className="z-10 w-full h-screen bg-white flex justify-center items-center  text-center leading-tight   text-8xl  ">
       
       <video
         src="/video/banner.mp4"
@@ -75,7 +75,7 @@ export default function Home() {
       </div>
 
 
-      <div className=" w-full h-80 md:h-96 flex justify-center items-center overflow-x-hidden space-x-4  bg-[#9ce968]">
+      <div className=" w-full h-96 flex justify-center items-center overflow-x-hidden space-x-4  bg-[#9ce968]">
         
         <div className="h-48 md:h-64 w-[250px] md:w-[450px] bg-amber-800 rounded-2xl flex-shrink-0"></div>
         <div className="h-48 md:h-64 w-[250px] md:w-[450px] bg-amber-800 rounded-2xl flex-shrink-0"></div>
