@@ -13,6 +13,7 @@ import hill from "../public/image/hill.png"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ImageScrollEffect from "@/components/videopage";
 import VideoScrollEffect from "@/components/videopage";
+import ThreeDModel from "@/components/threejs";
 
 
 export default function Home() {
@@ -103,7 +104,7 @@ export default function Home() {
       </div> */}
 
       {/* Hero Section */}
-      <div className="w-full h-screen text-7xl font-inter font-[800] text-white flex justify-center items-center text-center leading-tight bg-[#eb5dd6]">
+      <div className="w-full h-screen text-7xl font-inter font-[800] text-black flex justify-center items-center text-center leading-tight ">
         THE DESIGN
         <br />
         AGENCY
@@ -149,6 +150,7 @@ export default function Home() {
     THE DESIGN
     <br />
     AGENCY
+   
   </div>
   <div className="text-center leading-tight text-20 md:text-2xl pt-5 md:pt-8">
     Engaging user experience, world class
